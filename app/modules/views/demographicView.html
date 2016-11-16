@@ -1,0 +1,25 @@
+<div class="container-fluid demographic-view">
+    <div class="row demographic-header">
+        <div class="panel panel-default main-panel">
+            <div class="panel-heading">Panel Header</div>
+            <div class="panel-body">
+                <div></div>
+                <div class="col-md-4 pull-right">
+                    <div class="panel panel-default org-panel">
+                        <div class="panel-body">
+                        <div ng-repeat="(key , vlaue) in orgDetails">
+                          <label>{{key}} :</label>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="panel-footer">Panel Content</div>
+        </div>
+    </div>
+    <div class="row demographic-header" style="margin-bottom: 15px">
+        <h4 class="text-center" style="font-style: italic;">{{degraphic.mainHeadText}}</h4>
+        <div class="col-md-4" ng-repeat="(key ,  vlaue) in newBornChild" style="padding:10px"><b>{{key}}</b></div>
+        <div class="pull-right return-to-child"><b>Returns to Child's Demographic Record</b></div>
+    </div>
+</div>
